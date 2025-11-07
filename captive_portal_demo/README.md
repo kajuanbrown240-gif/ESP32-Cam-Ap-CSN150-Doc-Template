@@ -54,13 +54,6 @@ This demo provides a safe environment to learn how an ESP32 can provide a captiv
 
 If you need the original (unedited) code for instructor-approved lab work, please obtain explicit written permission from your instructor and ensure you operate on test networks where you have authorization.
 
-License / Ethical Use
----------------------
-Use this code only for learning and on networks you own or are authorized to test. Unauthorized network interference is illegal and unethical.
-#include <Arduino.h>
-#include <WiFi.h>
-#include <WebServer.h>
-#include <DNSServer.h>
 
 typedef struct
 {
