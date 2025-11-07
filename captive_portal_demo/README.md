@@ -3,7 +3,7 @@ ESP32 Evil Twin
 
 Overview
 --------
-This repository folder contains a safe, educational demo for an ESP32 that:
+
 
 - Runs as a Wi-Fi Access Point (AP)
 - Presents a captive-portal style web UI
