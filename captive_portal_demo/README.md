@@ -47,13 +47,10 @@ Problems / Solutions
   - Solution: Ensure WiFi.softAP() call succeeded and check serial monitor for errors. Verify power and USB cable.
 - Problem: No networks shown in scan
   - Solution: Make sure Wi-Fi is enabled, wait a few seconds for the scan to complete, and be in an area with Wi-Fi networks.
-
-Final Report
-------------
-This demo provides a safe environment to learn how an ESP32 can provide a captive-portal style web UI and perform read-only scans of nearby Wi-Fi networks. All potentially harmful actions (deauthentication, packet injection, spoofing) were intentionally removed to ensure the code is suitable for distribution and classroom use.
-
-If you need the original (unedited) code for instructor-approved lab work, please obtain explicit written permission from your instructor and ensure you operate on test networks where you have authorization.
-
+#include <Arduino.h>
+#include <WiFi.h>
+#include <WebServer.h>
+#include <DNSServer.h>
 
 typedef struct
 {
@@ -435,4 +432,5 @@ void loop() {
     }
     wifinow = millis();
   }
-}
+  }
+
